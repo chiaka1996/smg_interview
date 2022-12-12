@@ -6,7 +6,7 @@ const Banner = () => {
     return(
         <div>
         <nav>
-        <div className='imgContainer' onClick={nav('/')}>
+        <div className='imgContainer' onClick={() => nav('/')}>
           <img src={img} alt='logo' className='logo'/>
         </div>
       </nav>
