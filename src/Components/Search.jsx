@@ -43,7 +43,8 @@ const Search = () => {
             </section> 
 
             <div className='filmContainer'>
-                {movies.map((film, i) => <div key={i} style={{backgroundImage: `url(${film.Poster})`}} className='filmgrid'></div>)}
+                {movies.map((film, i) => <div key={i} style={{backgroundImage: `url(${film.Poster})`}} className='filmgrid'>
+                </div>)}
             </div>        
         </div>
     )
