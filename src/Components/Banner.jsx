@@ -1,9 +1,12 @@
 import img from '../Assets/MyTestApp.png'
+import { useNavigate } from "react-router-dom";
+
 const Banner = () => {
+    const nav = useNavigate()
     return(
         <div>
         <nav>
-        <div className='imgContainer'>
+        <div className='imgContainer' onClick={nav('/')}>
           <img src={img} alt='logo' className='logo'/>
         </div>
       </nav>
